@@ -37,6 +37,10 @@ function largestNum(arr) {
 // output: [16, 8, 4, 28]
 
 function elemsTimesLength(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        arr[i] *= arr.length;
+    }
+    return arr;
 }
 
 
