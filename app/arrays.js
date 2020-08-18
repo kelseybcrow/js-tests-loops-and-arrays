@@ -4,6 +4,8 @@
 // output: ['is', 'a', 'split', 'sentence.', 'This']
 
 function rearranger(arr) {
+    arr.push(arr.shift());
+    return arr;
 }
 
 
@@ -16,6 +18,13 @@ function rearranger(arr) {
 // output: 42
 
 function largestNum(arr) {
+    let max = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
 }
 
 
@@ -89,7 +98,7 @@ function flightCost(destination, firstClass) {
 // output: {id: 17, name: 'St. MaryLou de la Playa Carmen'}
 //Example:
 // input: 1000
-// output: { error: "No user with that id." } 
+// output: { error: "No user with that id." }
 
 
 let staff = [{ id: 1, name: 'Jon' }, { id: 2, name: 'Yuli' }, { id: 21, name: 'Peter' },
